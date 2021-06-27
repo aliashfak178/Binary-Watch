@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #111;
+    font-family: 'Titillium Web', sans-serif;
+}
+.watch{
+    position: absolute;
+    height: 300px;
+    width: 600px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 2px solid #fff;
+    border-radius: 10px;
+    box-shadow: 10px 5px 40px #49cdd6,
+                -10px 5px 40px #49cdd6;
+    color: #fff;
+}
+.watch div{
+    height: 100px;
+    font-size: 58px;
+}
+.B-HH{
+    display: inline-flex;
+    position: absolute;
+}
+.watch .B-HH label{
+    font-size: 18px;
+    display: block;
+    margin-top: 10px;
+    margin-left: 60px;
+}
+.B-MM{
+    display: inline-flex;
+    position: absolute;
+}
+.watch .B-MM label{
+    font-size: 18px;
+    display: block;
+    margin-top: 10px;
+    margin-left: 60px;
+}
+.B-SS{
+    display: inline-flex;
+    position: absolute;
+}
+.watch .B-SS label{
+    font-size: 18px;
+    display: block;
+    margin-top: 10px;
+    margin-left: 60px;
+}
+input[type='radio']:after {
+    width: 15px;
+        height: 15px;
+        border-radius: 15px;
+        top: -2px;
+        left: -1px;
+        position: relative;
+        background-color: #d1d3d1;
+        content: '';
+        display: inline-block;
+        visibility: visible;
+        border: 2px solid white;
+}
+
+input[type='radio']:checked:after {
+    width: 15px;
+        height: 15px;
+        border-radius: 15px;
+        top: -2px;
+        left: -1px;
+        position: relative;
+        background-color: #ffa500;
+        content: '';
+        display: inline-block;
+        visibility: visible;
+        border: 2px solid white;
+}
+#title{
+    color: aqua;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 10%;
+}
+
