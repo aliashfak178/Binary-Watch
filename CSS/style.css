@@ -55,7 +55,7 @@ body{
     margin-left: 60px;
 }
 input[type='radio']:after {
-    width: 15px;
+        width: 15px;
         height: 15px;
         border-radius: 15px;
         top: -2px;
@@ -69,7 +69,7 @@ input[type='radio']:after {
 }
 
 input[type='radio']:checked:after {
-    width: 15px;
+        width: 15px;
         height: 15px;
         border-radius: 15px;
         top: -2px;
@@ -79,7 +79,9 @@ input[type='radio']:checked:after {
         content: '';
         display: inline-block;
         visibility: visible;
-        border: 2px solid white;
+        border: 2px solid #ffa500;
+        box-shadow: 5px 5px 5px #49cdd6;
+        
 }
 #title{
     color: aqua;
@@ -87,4 +89,26 @@ input[type='radio']:checked:after {
     text-align: center;
     margin-top: 10%;
 }
+.desktop-mode{
+    display: none;
+}
 
+
+
+@media (max-width: 768px) {
+    .desktop-mode{
+        position: absolute;
+        display: block;
+        color: rgb(248, 89, 15);
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 400px;
+    }
+    .watch{
+        display: none;
+    }
+    #title{
+        display: none;
+    }
+}

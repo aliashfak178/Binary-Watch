@@ -165,14 +165,8 @@ function SetSeconds(sec)
         sec = sec - 1;
     } 
 }
-function Show_Time()
+function Show_Digital_Time(current_houer,current_minute,current_second)
 {
-    // Showing Digital Clock
-    var D=new Date();
-    let current_houer=D.getHours();
-    let current_minute=D.getMinutes();
-    let current_second=D.getSeconds();
-    
     if(current_houer < 10 || current_minute < 10 || current_second < 10)
     {
         if(current_houer < 10)
@@ -188,6 +182,17 @@ function Show_Time()
         Min.innerText = current_minute;
         Sec.innerText = current_second;
     }
+}
+function Show_Time()
+{
+    // Showing Digital Clock
+    var D=new Date();
+    let current_houer=D.getHours();
+    let current_minute=D.getMinutes();
+    let current_second=D.getSeconds();
+
+    // showing Digital Clock
+    Show_Digital_Time(current_houer,current_minute,current_second);
 
     // Showing Binary Clock
     SetHouer(current_houer);
